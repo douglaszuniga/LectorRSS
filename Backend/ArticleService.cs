@@ -54,7 +54,7 @@ namespace Backend
             try
             {
                 var list = ParseRss(stringResult);
-                _persistenceManager.DeleteAll();
+                //_persistenceManager.DeleteAll();
                 _persistenceManager.Add(list);
                 System.Windows.Deployment.Current.Dispatcher.BeginInvoke(() =>
                                                                              {
